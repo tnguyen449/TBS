@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transpotation Booking Website</title>
+    <!--Declare Javascript libraries-->
+    <script src="libs/angular.min.js" charset="utf-8"></script>
+    <script src="libs/ui-bootstrap-tpls-2.5.0.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/config.js" charset="utf-8"></script>
+    <!--Declare CSS libraries or external files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container" ng-app="tbs">
+      <div data-ng-include="'html/header.html'"></div>
+      <ng-view  onload=""  $autoscroll=""></ng-view>
+      <div data-ng-include="'html/footer.html'"></div>
+    </div>
+  </body>
+</html>
